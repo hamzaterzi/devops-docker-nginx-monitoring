@@ -1,5 +1,6 @@
 # DevOps End-to-End Project on Ubuntu Server
 
+🚀 This project was initially built on a local Ubuntu Server and later migrated to AWS EC2 using Terraform. The deployment process was automated using GitHub Actions CI/CD pipeline.
 🚀 A hands-on DevOps project demonstrating deployment, monitoring, and alerting in a real-world-like environment.
 
 This project demonstrates an end-to-end DevOps workflow built on a single Ubuntu Server VM, covering application containerization, CI/CD, reverse proxy setup, health checks, monitoring, and alerting.
@@ -150,6 +151,10 @@ Deployment flow:
 
 Git push → GitHub Actions → SSH → EC2 → docker-compose deploy
 
+## CI/CD Flow
+
+Git push → GitHub Actions → SSH → AWS EC2 → Docker Compose deployment
+
 ## Important Note
 
 This repository contains the configuration files used during the project deployment on AWS EC2.
@@ -166,3 +171,7 @@ To run the project locally or on a server:
 git clone https://github.com/hamzaterzi/devops-docker-nginx-monitoring.git
 cd devops-docker-nginx-monitoring
 docker-compose up -d --build
+
+## Important Note
+
+This project was created for learning and demonstration purposes. Infrastructure was provisioned using Terraform and later destroyed to avoid unnecessary cloud costs.
