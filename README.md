@@ -1,5 +1,7 @@
 # DevOps End-to-End Project on Ubuntu Server
 
+🚀 A hands-on DevOps project demonstrating deployment, monitoring, and alerting in a real-world-like environment.
+
 This project demonstrates an end-to-end DevOps workflow built on a single Ubuntu Server VM, covering application containerization, CI/CD, reverse proxy setup, health checks, monitoring, and alerting.
 
 ## Project Overview
@@ -53,20 +55,20 @@ Installed Node Exporter to collect host-level metrics
 Installed Prometheus to scrape and evaluate metrics  
 Installed Grafana for dashboard visualization  
 Installed Blackbox Exporter to probe application availability and HTTP response status  
-Visualized CPU, memory, disk, network, and app health metrics in Grafana  
 
 ### Grafana Dashboard
 ![Grafana](images/grafana.png)
 
-### Alerting
+## Alerting
+
 Created Prometheus alert rules with severity levels:
 
-High CPU usage (warning)
-High memory usage (warning)
-Low disk space (critical)
-Application downtime (critical)
+- High CPU usage (warning)
+- High memory usage (warning)
+- Low disk space (critical)
+- Application downtime (critical)
 
-Configured alert evaluation duration (for) and tested alert lifecycle:
+Configured alert evaluation duration (`for`) and tested alert lifecycle:
 Inactive → Pending → Firing
 
 ## Alert Example
@@ -120,7 +122,6 @@ The following screenshot shows a real alert in FIRING state when the application
 ├── monitor.sh
 ├── package.json
 └── README.md
-
 Key Outcomes
 Built a hands-on DevOps project from deployment to observability
 Practiced Docker-based application delivery
@@ -129,9 +130,14 @@ Simulated service failures and validated recovery and alert behavior
 Gained experience with production-style troubleshooting on Linux
 
 
-## Commit ve push
+## Why This Project Matters
 
-```bash
-git add .
-git commit -m "Integrate monitoring and alerting into end-to-end DevOps project"
-git push
+This project simulates a real-world DevOps environment by combining:
+
+- Application deployment
+- CI/CD automation
+- Monitoring and observability
+- Alerting and incident simulation
+- Failure testing and recovery
+
+It demonstrates practical experience in building and troubleshooting production-like systems on Linux.
