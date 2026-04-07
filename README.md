@@ -21,19 +21,13 @@ In this lab, I built and tested a complete DevOps-style setup including:
 
 This project follows a simple end-to-end DevOps architecture:
 
-User → Nginx → Node.js Application
-                ↓
-          Blackbox Exporter
-                ↓
-           Prometheus
-                ↓
-             Grafana
-
-- Nginx acts as a reverse proxy
-- Node.js serves the application
-- Blackbox Exporter probes application health (HTTP)
-- Prometheus collects and evaluates metrics
-- Grafana visualizes system and application metrics
+User → Nginx → Node.js Application  
+               ↓  
+        Blackbox Exporter  
+               ↓  
+           Prometheus  
+               ↓  
+            Grafana  
 
 ## What I Built
 
