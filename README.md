@@ -41,7 +41,7 @@ User → Nginx → Node.js Application
 - Wrote a custom `monitor.sh` script
 - Checked CPU, disk, and Nginx status
 - Automated checks using cron
-- Simulated failure by stopping Nginx and verifying recovery behavior
+- Simulated failure by stopping Nginx and verified automatic recovery via monitoring script
 
 ### CI/CD
 - Added a GitHub Actions workflow for Docker image build automation
@@ -55,11 +55,15 @@ User → Nginx → Node.js Application
 - Visualized CPU, memory, disk, network, and app health metrics in Grafana
 
 ### Alerting
-Created Prometheus alert rules for:
-- High CPU usage
-- High memory usage
-- Low disk space
-- Application downtime
+Created Prometheus alert rules with severity levels:
+
+High CPU usage (warning)
+High memory usage (warning)
+Low disk space (critical)
+Application downtime (critical)
+
+Configured alert evaluation duration (for) and tested alert lifecycle:
+Inactive → Pending → Firing
 
 ## Tech Stack
 
