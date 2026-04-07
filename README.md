@@ -142,4 +142,4 @@ This project simulates a real-world DevOps environment by combining:
 
 It demonstrates practical experience in building and troubleshooting production-like systems on Linux.
 
-test cicdfgfff
+CI/CD pipeline test update
