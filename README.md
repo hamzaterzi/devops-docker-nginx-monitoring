@@ -149,3 +149,20 @@ This project includes a GitHub Actions pipeline that automatically deploys the a
 Deployment flow:
 
 Git push → GitHub Actions → SSH → EC2 → docker-compose deploy
+
+## Important Note
+
+This repository contains the configuration files used during the project deployment on AWS EC2.
+
+The setup is intended for learning and demonstration purposes and may not follow production-level security practices.
+
+Infrastructure was provisioned using Terraform and later destroyed to avoid unnecessary cloud costs.
+
+## How to Run
+
+To run the project locally or on a server:
+
+```bash
+git clone https://github.com/hamzaterzi/devops-docker-nginx-monitoring.git
+cd devops-docker-nginx-monitoring
+docker-compose up -d --build
