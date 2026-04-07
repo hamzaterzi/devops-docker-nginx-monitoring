@@ -142,4 +142,10 @@ This project simulates a real-world DevOps environment by combining:
 
 It demonstrates practical experience in building and troubleshooting production-like systems on Linux.
 
-CI/CD pipeline test update
+## CI/CD
+
+This project includes a GitHub Actions pipeline that automatically deploys the application to AWS EC2 on each push.
+
+Deployment flow:
+
+Git push → GitHub Actions → SSH → EC2 → docker-compose deploy
