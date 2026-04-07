@@ -141,3 +141,5 @@ This project simulates a real-world DevOps environment by combining:
 - Failure testing and recovery
 
 It demonstrates practical experience in building and troubleshooting production-like systems on Linux.
+
+test cicd
