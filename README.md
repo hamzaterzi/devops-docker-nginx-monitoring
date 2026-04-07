@@ -32,6 +32,8 @@ User → Nginx → Node.js Application
                ↓  
             Grafana  
 
+GitHub → GitHub Actions → EC2 (Docker Compose)
+
 ## What I Built
 
 ### Application and Deployment
@@ -175,3 +177,11 @@ docker-compose up -d --build
 ## Important Note
 
 This project was created for learning and demonstration purposes. Infrastructure was provisioned using Terraform and later destroyed to avoid unnecessary cloud costs.
+
+## Final Outcome
+
+- Successfully deployed a containerized application on AWS EC2  
+- Implemented monitoring and alerting using Prometheus, Grafana, and Alertmanager  
+- Automated deployment with GitHub Actions CI/CD pipeline  
+- Simulated failures and validated system behavior  
+- Cleaned up infrastructure to avoid unnecessary cloud costs
