@@ -47,12 +47,16 @@ User → Nginx → Node.js Application
 - Added a GitHub Actions workflow for Docker image build automation
 - Used GitHub as the source control platform for the lab
 
-### Monitoring and Observability
-- Installed Node Exporter to collect host-level metrics
-- Installed Prometheus to scrape and evaluate metrics
-- Installed Grafana for dashboard visualization
-- Installed Blackbox Exporter to probe application availability and HTTP response status
-- Visualized CPU, memory, disk, network, and app health metrics in Grafana
+## Monitoring and Observability
+
+Installed Node Exporter to collect host-level metrics  
+Installed Prometheus to scrape and evaluate metrics  
+Installed Grafana for dashboard visualization  
+Installed Blackbox Exporter to probe application availability and HTTP response status  
+Visualized CPU, memory, disk, network, and app health metrics in Grafana  
+
+### Grafana Dashboard
+![Grafana](images/grafana.png)
 
 ### Alerting
 Created Prometheus alert rules with severity levels:
@@ -64,6 +68,12 @@ Application downtime (critical)
 
 Configured alert evaluation duration (for) and tested alert lifecycle:
 Inactive → Pending → Firing
+
+## Alert Example
+
+The following screenshot shows a real alert in FIRING state when the application was intentionally stopped:
+
+![Alert](images/prometheus.png)
 
 ## Tech Stack
 
