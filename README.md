@@ -94,3 +94,18 @@ Created Prometheus alert rules for:
 ├── monitor.sh
 ├── package.json
 └── README.md
+
+Key Outcomes
+Built a hands-on DevOps project from deployment to observability
+Practiced Docker-based application delivery
+Implemented monitoring and alerting with Prometheus and Grafana
+Simulated service failures and validated recovery and alert behavior
+Gained experience with production-style troubleshooting on Linux
+
+
+## Commit ve push
+
+```bash
+git add .
+git commit -m "Integrate monitoring and alerting into end-to-end DevOps project"
+git push
